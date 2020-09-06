@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <style>
+      .td-1 {
+        width: 200px;
+        padding: 5px;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        position: relative;
+        background-color: rgb(188, 189, 190);
+        top: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form onsubmit="fun()">
+        <table>
+          <tr>
+            <td class="td-1">Full Name</td>
+            <td>
+              <i class="fas fa-user" style="padding-right: 10px"></i
+              ><input
+                type="text"
+                id="First"
+                placeholder="First name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Address Line 1</td>
+            <td>
+              <i class="far fa-address-book" style="padding-right: 10px"></i
+              ><input type="text" id="add1" placeholder="Address Line 1" />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Address Line 2</td>
+            <td>
+              <i class="far fa-address-book" style="padding-right: 10px"></i
+              ><input type="text" id="add2" placeholder="Address Line 2" />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">City</td>
+            <td>
+              <i class="far fa-building" style="padding-right: 10px"></i
+              ><input type="text" id="city" placeholder="City" />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">State/Province/Region</td>
+            <td>
+              <i class="fas fa-map-marker-alt" style="padding-right: 10px"></i
+              ><input
+                type="text"
+                id="spr"
+                placeholder="State/Province/Region"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Postal Code/ZIP</td>
+            <td>
+              <i class="fas fa-envelope-open" style="padding-right: 10px"></i
+              ><input
+                type="text"
+                id="First_name"
+                placeholder="Postal Code/ZIP"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Country</td>
+            <td>
+              <i class="fas fa-map" style="padding-right: 10px"></i>
+              <select>
+                <option selected>India</option>
+                <option>Sri Lanka</option>
+                <option>Pakisthan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Email</td>
+            <td>
+              <i class="fas fa-user" style="padding-right: 10px"></i
+              ><input type="email" id="Email" placeholder="Email" />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-1">Phone Number</td>
+            <td>
+              <i class="fas fa-user" style="padding-right: 10px"></i
+              ><input type="text" id="pn" placeholder="Phone Number" />
+            </td>
+          </tr>
+        </table>
+        <input type="submit" id="sub" value="Submit" />
+      </form>
+    </div>
+    <script>
+      function fun() {
+        alert("thank you");
+      }
+    </script>
+  </body>
+</html>
